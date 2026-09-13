@@ -1,0 +1,13 @@
+﻿venv/
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+.ipynb_checkpoints/
+*.pt
+*.pth
+*.h5
+*.onnx
