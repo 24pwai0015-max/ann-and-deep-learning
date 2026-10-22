@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="320" viewBox="0 0 1000 320"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Arsalan – ANN and Deep Learning – animated neural network</title>
+
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#9BA5B4" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0s !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+
+  <rect width="100%" height="100%" fill="transparent"/>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- ═══════════ NEURAL NETWORK DIAGRAM ═══════════ -->
+  <!--
+       Layer 0 (input):  3 nodes   x=620
+       Layer 1 (hidden): 4 nodes   x=760
+       Layer 2 (output): 2 nodes   x=900
+  -->
+
+  <!-- ── Connections (drawn first, behind nodes) ── -->
+  <!-- Input → Hidden -->
+  <g stroke="#7C3AED" stroke-width="1" opacity="0.18">
+    <!-- i0 to h0-h3 -->
+    <line x1="620" y1="100" x2="760" y2="80"/>
+    <line x1="620" y1="100" x2="760" y2="140"/>
+    <line x1="620" y1="100" x2="760" y2="200"/>
+    <line x1="620" y1="100" x2="760" y2="260"/>
+    <!-- i1 to h0-h3 -->
+    <line x1="620" y1="180" x2="760" y2="80"/>
+    <line x1="620" y1="180" x2="760" y2="140"/>
+    <line x1="620" y1="180" x2="760" y2="200"/>
+    <line x1="620" y1="180" x2="760" y2="260"/>
+    <!-- i2 to h0-h3 -->
+    <line x1="620" y1="260" x2="760" y2="80"/>
+    <line x1="620" y1="260" x2="760" y2="140"/>
+    <line x1="620" y1="260" x2="760" y2="200"/>
+    <line x1="620" y1="260" x2="760" y2="260"/>
+  </g>
+  <!-- Hidden → Output -->
+  <g stroke="#7C3AED" stroke-width="1" opacity="0.18">
+    <line x1="760" y1="80"  x2="900" y2="140"/>
+    <line x1="760" y1="80"  x2="900" y2="220"/>
+    <line x1="760" y1="140" x2="900" y2="140"/>
+    <line x1="760" y1="140" x2="900" y2="220"/>
+    <line x1="760" y1="200" x2="900" y2="140"/>
+    <line x1="760" y1="200" x2="900" y2="220"/>
+    <line x1="760" y1="260" x2="900" y2="140"/>
+    <line x1="760" y1="260" x2="900" y2="220"/>
+  </g>
+
+  <!-- ── Signal pulse: a bright dot travelling one path ── -->
+  <!-- Path: i1(620,180) → h1(760,140) → o0(900,140) -->
+  <circle r="4" fill="#00D9FF" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1;1;0.8;1;0" keyTimes="0;0.05;0.45;0.5;0.95;1" dur="4s" repeatCount="indefinite"/>
+    <animateMotion dur="4s" repeatCount="indefinite" calcMode="linear"
+                   path="M620,180 L760,140 L900,140"/>
+  </circle>
+  <!-- Second pulse (offset by 2 s): i2(620,260) → h2(760,200) → o1(900,220) -->
+  <circle r="4" fill="#7C3AED" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1;1;0.8;1;0" keyTimes="0;0.05;0.45;0.5;0.95;1" dur="4s" begin="2s" repeatCount="indefinite"/>
+    <animateMotion dur="4s" begin="2s" repeatCount="indefinite" calcMode="linear"
+                   path="M620,260 L760,200 L900,220"/>
+  </circle>
+
+  <!-- ── Nodes: Input layer ── -->
+  <circle cx="620" cy="100" r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <circle cx="620" cy="180" r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <circle cx="620" cy="260" r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <!-- ── Nodes: Hidden layer ── -->
+  <circle cx="760" cy="80"  r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <circle cx="760" cy="140" r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <circle cx="760" cy="200" r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <circle cx="760" cy="260" r="10" fill="#121822" stroke="#7C3AED" stroke-width="2"/>
+  <!-- ── Nodes: Output layer ── -->
+  <circle cx="900" cy="140" r="10" fill="#121822" stroke="#00D9FF" stroke-width="2"/>
+  <circle cx="900" cy="220" r="10" fill="#121822" stroke="#00D9FF" stroke-width="2"/>
+
+  <!-- Layer labels -->
+  <text x="620" y="300" text-anchor="middle"
+        font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="10" fill="#9BA5B4">input</text>
+  <text x="760" y="300" text-anchor="middle"
+        font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="10" fill="#9BA5B4">hidden</text>
+  <text x="900" y="300" text-anchor="middle"
+        font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="10" fill="#9BA5B4">output</text>
+
+  <!-- ═══════════ TEXT ═══════════ -->
+  <text x="24" y="50"
+        font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="36" font-weight="700" fill="#7C3AED">
+    Arsalan
+  </text>
+  <text font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="16" fill="#9BA5B4">
+    <tspan x="24" y="80">ANN &amp; Deep Learning</tspan>
+  </text>
+  <text font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="14" fill="#9BA5B4">
+    <tspan x="24" y="110" fill="#9BA5B4">BS AI · Semester 5 · UET Peshawar</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="24" y="180"
+        font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="13" fill="#9BA5B4" opacity="0.7">
+    Understanding every neuron,
+  </text>
+  <text x="24" y="200"
+        font-family="ui-monospace,'SF Mono',Consolas,'Segoe UI',sans-serif"
+        font-size="13" fill="#9BA5B4" opacity="0.7">
+    one gradient at a time.
+  </text>
+</svg>
