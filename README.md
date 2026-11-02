@@ -63,6 +63,19 @@ Nothing here is copied. If it is in this repo, I worked through it myself.
 
 ---
 
+
+## Deep Learning Labs
+
+Interactive Google Colab notebooks for hands-on deep learning experiments:
+
+| Lab | Description | Notebook | Open in Colab |
+|:---:|:------------|:---------|:-------------:|
+| **Lab 3** | Adaptive Optimizers (ANN / MLP) | [Lab3_Adaptive_Optimizers_ANN_MLP.ipynb](Lab3_Adaptive_Optimizers_ANN_MLP.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/Lab3_Adaptive_Optimizers_ANN_MLP.ipynb) |
+| **Lab 4** | Adaptive Optimizers (CNN) | [Lab4_Adaptive_Optimizers_CNN.ipynb](Lab4_Adaptive_Optimizers_CNN.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/Lab4_Adaptive_Optimizers_CNN.ipynb) |
+| **Lab 5** | Batch vs. Stochastic vs. Mini-Batch | [Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb](Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb) |
+
+---
+
 ## Planned Skills
 
 What I will be implementing from scratch over the semester.
@@ -101,6 +114,9 @@ ann-and-deep-learning/
 ├── progress-tracker/
 │   └── README.md
 ├── progress-tracker.md                   ← weekly status table
+├── Lab3_Adaptive_Optimizers_ANN_MLP.ipynb  ← Lab 3: Adaptive Optimizers in ANN/MLP
+├── Lab4_Adaptive_Optimizers_CNN.ipynb      ← Lab 4: Adaptive Optimizers in CNN
+├── Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb ← Lab 5: Batch vs Mini-batch vs SGD
 ├── .gitignore
 ├── requirements.txt
 └── README.md                             ← you are here
