@@ -21,17 +21,16 @@
 
 | Lab Module | Topic & Experimental Focus | Code (Jupyter / Colab) | Academic Report | Evaluation Status |
 |:---:|:---|:---:|:---:|:---:|
-| **Lab 01** | *Foundational ANN Implementation (Uploading)* | ⏳ Pending Upload | ⏳ Pending Upload | In Progress |
-| **Lab 02** | *Multi-Layer Perceptron Forward/Backward (Uploading)* | ⏳ Pending Upload | ⏳ Pending Upload | In Progress |
+| **Lab 01** | **Application of Mask R-CNN for Car Damage Detection**<br>Transfer learning with ResNet-101 backbone for instance segmentation of vehicle scratches and structural damage | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab1_Car_Damage_Detection_Mask_RCNN.ipynb) | [`Lab1_Car_Damage_Detection_Mask_RCNN.pdf`](labs/delivered-reports/Lab1_Car_Damage_Detection_Mask_RCNN.pdf) | ✅ Evaluated & Verified |
+| **Lab 02** | **Binary Classification of Water Potability via ANN & MLP**<br>Physicochemical feature preprocessing, backpropagation dynamics, and hyperparameter tuning across 3,276 water samples | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab2_Water_Potability_Classification.ipynb) | [`Lab2_Water_Potability_Classification.pdf`](labs/delivered-reports/Lab2_Water_Potability_Classification.pdf) | ✅ Evaluated & Verified |
 | **Lab 03** | **Adaptive Optimizers for ANN & MLP (MNIST)**<br>Comparing SGD, Adam, RMSprop, Adadelta & Adagrad on 1-layer ANN vs 2-layer MLP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab3_Adaptive_Optimizers_ANN_MLP.ipynb) | [`Lab3_Adaptive_Optimizers_ANN_MLP.pdf`](labs/delivered-reports/Lab3_Adaptive_Optimizers_ANN_MLP.pdf) | ✅ Evaluated & Verified |
 | **Lab 04** | **Adaptive Optimizers for CNN (Fashion-MNIST)**<br>Evaluating 5 optimizers on Conv2D layers with identical initial weights | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab4_Adaptive_Optimizers_CNN.ipynb) | [`Lab4_Adaptive_Optimizers_CNN.pdf`](labs/delivered-reports/Lab4_Adaptive_Optimizers_CNN.pdf) | ✅ Evaluated & Verified |
 | **Lab 05** | **Batch vs. Stochastic vs. Mini-Batch Gradient Descent**<br>Empirical comparison across ANN, MLP, and CNN architectures | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb) | [`Lab5_Batch_vs_Stochastic_vs_MiniBatch.pdf`](labs/delivered-reports/Lab5_Batch_vs_Stochastic_vs_MiniBatch.pdf) | ✅ Evaluated & Verified |
-| **Case Study** | **Mask R-CNN for Instance Segmentation**<br>Car damage detection and segmentation study | — | [`Lab_Mask_RCNN_Car_Damage_Detection.pdf`](labs/delivered-reports/Lab_Mask_RCNN_Car_Damage_Detection.pdf) | ✅ Delivered |
 
 ---
 
 ## Academic Verification Summary
 
 - **Midterm Lectures Completed:** 5 of 5 (100% of Midterm Syllabus)
-- **Practical Labs Verified:** Labs 3, 4, 5 (Labs 1 & 2 arriving)
+- **Practical Labs Verified:** 5 of 5 Labs (Labs 01, 02, 03, 04, and 05 fully linked with Colab badges & delivered reports)
 - **Mock Exam Preparedness:** Full solved benchmark ready in [`DEEP_LEARNING_MIDTERM_GUIDE.md`](DEEP_LEARNING_MIDTERM_GUIDE.md#3-midterm-examination-benchmark-complete-solved-paper)

@@ -78,8 +78,8 @@ Interactive Google Colab notebooks for hands-on deep learning experiments:
 
 | Lab | Description | Notebook | Open in Colab |
 |:---:|:------------|:---------|:-------------:|
-| **Lab 1** | Foundational ANN Implementation | ⏳ Arriving | — |
-| **Lab 2** | MLP Forward & Backpropagation | ⏳ Arriving | — |
+| **Lab 1** | Mask R-CNN Car Damage Segmentation | [`Lab1_Car_Damage_Detection_Mask_RCNN.ipynb`](labs/Lab1_Car_Damage_Detection_Mask_RCNN.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab1_Car_Damage_Detection_Mask_RCNN.ipynb) |
+| **Lab 2** | Water Potability MLP Classification | [`Lab2_Water_Potability_Classification.ipynb`](labs/Lab2_Water_Potability_Classification.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab2_Water_Potability_Classification.ipynb) |
 | **Lab 3** | Adaptive Optimizers (ANN / MLP) | [`Lab3_Adaptive_Optimizers_ANN_MLP.ipynb`](labs/Lab3_Adaptive_Optimizers_ANN_MLP.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab3_Adaptive_Optimizers_ANN_MLP.ipynb) |
 | **Lab 4** | Adaptive Optimizers (CNN) | [`Lab4_Adaptive_Optimizers_CNN.ipynb`](labs/Lab4_Adaptive_Optimizers_CNN.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab4_Adaptive_Optimizers_CNN.ipynb) |
 | **Lab 5** | Batch vs. Stochastic vs. Mini-Batch | [`Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb`](labs/Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/24pwai0015-max/ann-and-deep-learning/blob/main/labs/Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb) |
@@ -107,11 +107,17 @@ ann-and-deep-learning/
 │   └── roadmap.svg                       ← course timeline
 ├── labs/
 │   ├── README.md                         ← index of all labs & deliverables
-│   ├── Lab3_Adaptive_Optimizers_ANN_MLP.ipynb      ← Lab 3: Adaptive Optimizers in ANN/MLP
-│   ├── Lab4_Adaptive_Optimizers_CNN.ipynb          ← Lab 4: Adaptive Optimizers in CNN
-│   ├── Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb ← Lab 5: Batch vs Mini-batch vs SGD
+│   ├── Lab1_Car_Damage_Detection_Mask_RCNN.ipynb   ← Lab 1: Mask R-CNN Instance Segmentation
+│   ├── Lab2_Water_Potability_Classification.ipynb   ← Lab 2: Binary Water Potability MLP
+│   ├── Lab3_Adaptive_Optimizers_ANN_MLP.ipynb       ← Lab 3: Adaptive Optimizers in ANN/MLP
+│   ├── Lab4_Adaptive_Optimizers_CNN.ipynb           ← Lab 4: Adaptive Optimizers in CNN
+│   ├── Lab5_Batch_vs_Stochastic_vs_MiniBatch.ipynb  ← Lab 5: Batch vs Mini-batch vs SGD
+│   ├── custom.py                         ← Mask R-CNN dataset & config utilities
+│   ├── mrcnn/                            ← Matterport Mask R-CNN engine
+│   ├── dataset/                          ← Car damage train/val annotation set
+│   ├── water_potability.csv              ← 3,276 water sample dataset
 │   ├── handouts/                         ← official lab task sheets
-│   └── delivered-reports/                ← evaluated PDF submissions
+│   └── delivered-reports/                ← evaluated PDF submissions with Colab links
 ├── DEEP_LEARNING_MIDTERM_GUIDE.md        ← Master Midterm Guide & Solved Exam Paper
 ├── personal-notes/
 │   ├── AI_LEARNING_STRATEGY.md           ← Arsalan's 7-step study workflow & philosophy
