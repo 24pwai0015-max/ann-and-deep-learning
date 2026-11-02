@@ -95,6 +95,10 @@ ann-and-deep-learning/
 ├── assets/
 │   ├── hero.svg                          ← animated neural network banner
 │   └── roadmap.svg                       ← course timeline
+├── labs/
+│   ├── README.md                         ← index of all labs & deliverables
+│   ├── handouts/                         ← official lab task sheets
+│   └── delivered-reports/                ← evaluated PDF submissions
 ├── personal-notes/
 │   ├── intro to ann.pdf                  ← first reading notes
 │   └── README.md
