@@ -20,6 +20,13 @@
 
 ## Mission
 
+> [!IMPORTANT]
+> **Semester Midterm Archive & Study Blueprint:**
+> The complete midterm curriculum (Lectures 01 to 08, Convolutional Architectures, Adaptive Optimizers & Fuzzy Logic) is consolidated in:
+> 👉 **[`DEEP_LEARNING_MIDTERM_GUIDE.md`](DEEP_LEARNING_MIDTERM_GUIDE.md)**
+> Includes Muhammad Arsalan's AI Learning Strategy (`FIRST LEARN → THEN UNDERSTAND → THEN APPLY → THEN BUILD`), high-yield derivations, formula cheat-sheets, and a complete solved midterm examination benchmark paper.
+
+
 This is my semester-long lab notebook for Artificial Neural Networks & Deep Learning.
 The goal is to understand every mathematical detail — from the perceptron to backpropagation — before touching any framework.
 Nothing here is copied. If it is in this repo, I worked through it myself.
@@ -52,7 +59,8 @@ Nothing here is copied. If it is in this repo, I worked through it myself.
 
 | Folder | Contents |
 |:-------|:---------|
-| [`personal-notes/`](personal-notes/) | Intro to ANN — a handwritten/typed PDF from my first reading |
+| [`DEEP_LEARNING_MIDTERM_GUIDE.md`](DEEP_LEARNING_MIDTERM_GUIDE.md) | Flagship Midterm Guide, 7-Step AI Study Strategy & Solved Mock Paper |
+| [`personal-notes/`](personal-notes/) | Study notes (`notes.md`), cheat-sheet (`reference.md`), and `AI_LEARNING_STRATEGY.md` |
 | [`connections-to-ai-robotics/`](connections-to-ai-robotics/) | Two bridge docs: how deep learning maps to robotics perception and agent policies |
 | [`lecture-notes/`](lecture-notes/) | Placeholder — will hold derivations and proofs |
 | [`assignments/`](assignments/) | Placeholder — semester problem sets |
@@ -99,7 +107,11 @@ ann-and-deep-learning/
 │   ├── README.md                         ← index of all labs & deliverables
 │   ├── handouts/                         ← official lab task sheets
 │   └── delivered-reports/                ← evaluated PDF submissions
+├── DEEP_LEARNING_MIDTERM_GUIDE.md        ← Master Midterm Guide & Solved Exam Paper
 ├── personal-notes/
+│   ├── AI_LEARNING_STRATEGY.md           ← Arsalan's 7-step study workflow & philosophy
+│   ├── notes.md                          ← Concepts, worked examples & proof derivations
+│   ├── reference.md                      ← Quick-reference formula & syntax cheat-sheet
 │   ├── intro to ann.pdf                  ← first reading notes
 │   └── README.md
 ├── connections-to-ai-robotics/
